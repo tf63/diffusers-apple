@@ -1,5 +1,9 @@
 # Diffusers Apple
 
+M2 チップの MacBook Air 上で Stable Diffusion を動かしてみる
+
+-   https://zenn.dev/tf63/articles/diffusers-apple-tf63-20241126
+
 **動作環境**
 
 -   MacBook Air M2 チップ 16GB
