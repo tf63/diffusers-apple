@@ -41,7 +41,7 @@ def inference(pipeline_inpaint, context: ExperimentalContext, prompt: str, guida
 @options
 def main(seed, device):
     prompt = 'a bench'
-    # prompt = 'cat wizard, sitting on a bench'
+    # prompt = 'a cat, sitting on a bench'
 
     pipeline_inpaint = AutoPipelineForInpainting.from_pretrained(
         'kandinsky-community/kandinsky-2-1-inpaint', torch_dtype=torch.float16

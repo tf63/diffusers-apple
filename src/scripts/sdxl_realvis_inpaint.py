@@ -47,8 +47,8 @@ def inference(pipeline_inpaint, context: ExperimentalContext, prompt: str, guida
 
 @options
 def main(seed, device):
-    # prompt = 'a bench'
-    prompt = 'cat wizard, sitting on a bench'
+    prompt = 'a bench'
+    # prompt = 'a cat, sitting on a bench'
 
     # img2imgモデルの読み込み
     pipeline_inpaint = StableDiffusionXLInpaintPipeline.from_pretrained(

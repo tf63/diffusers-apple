@@ -42,7 +42,7 @@ def inference(pipeline_inpaint, context: ExperimentalContext, prompt: str, guida
 @options
 def main(seed, device):
     prompt = 'a bench'
-    # prompt = 'A majestic tiger sitting on a bench'
+    # prompt = 'a cat, sitting on a bench'
 
     # img2imgモデルの読み込み
     # https://huggingface.co/stabilityai/stable-diffusion-2-inpainting
