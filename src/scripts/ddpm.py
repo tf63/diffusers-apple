@@ -21,11 +21,12 @@ def inference(pipeline, context: ExperimentalContext, batch_size, num_inference_
 
 @options
 def main(seed, device):
-    context = ExperimentalContext(seed=seed, device=device, root_dir=os.path.join('out', 'ddpm_cat'))
     batch_size = 1
 
     # モデルの読み込み
-    pipeline = DDPMPipeline.from_pretrained('google/ddpm-cat-256', torch_dtype=torch.float16).to(context.device)
+    pipeline = DDPMPipeline.from_pretrained('google/ddpm-cat-256', torch_dtype=torch.float16).to(device)
+
+    context = ExperimentalContext(seed=seed, device=device, root_dir=os.path.join('out', 'ddpm_cat'))
     inference(pipeline=pipeline, context=context, batch_size=batch_size, num_inference_steps=1000)
 
 
