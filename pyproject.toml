@@ -21,12 +21,6 @@ dev-dependencies = [
     "pytest>=8.3.2", "mypy>=1.11.1", "ruff>=0.5.7"
 ]
 
-[tool.uv.sources]
-sub = { workspace = true }
-
-[tool.uv.workspace]
-members = ["packages/*"]
-
 [tool.hatch.build.targets.wheel]
 packages = ["src"]
 
